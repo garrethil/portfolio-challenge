@@ -1,3 +1,5 @@
+/*  */
+
 :root {
     --main-light: rgb(41, 41, 41, 0.75);
     --main: rgb(41, 41, 41);
@@ -54,25 +56,123 @@ header {
 
 
 main {
+
+}
+
+.main-card, .card {
+    min-height: 200px;
+    padding: 20px;
+    border: 3px solid var(--main-light);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+
 }
 
 .main-card {
-    width: 100%;
-    padding: 20px;
-    border: 3px solid var(--main-light);
-    margin: 5px 10px;
+    width: 81%;
+    margin: 10px;
+    background-image: url(./background-images/main-img.png);
+    background-size: cover;
+    background-position: top;
 }
 
 .card {
-    width: flex;
-    padding: 20px;
-    border: 3px solid var(--main-light);
+    width: 40%;
     margin: 5px 10px;
+    background-size: cover;
+    background-position: center;
 }
+
+
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
 
+.info {
+    background-color: var(--main-light);
+    color: var(--text);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+/* attatching a background image to each card item */
+#card-2 {
+    background-image: url(./background-images/Mario.64.jpeg);
+}
+
+#card-3 {
+    background-image: url(./background-images/stock-3.jpeg);
+}
+
+#card-4 {
+    background-image: url(./background-images/stock-4.jpeg);
+}
+
+#card-5 {
+    background-image: url(./background-images/stock-5.jpg);
+}
+
+
+
+aside {
+    padding: 30px;
+    font-size: 30px;
+    border-right: 3px solid blue;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.para {
+    width: 81%;
+    padding: 60px;
+    margin: 10px;
+    font-size: 18px;
+}
+#contact {
+    display: flex;
+    justify-content: flex-end;
+
+}
+#contact ul {
+    list-style: none;
+    display: flex;
+    padding: 50px;
+    border-radius: 10px;
+    width: 82%;
+    font-size: 20px;
+}
+
+#contact li {
+    padding: 30px;
+    margin: 20px 30px;
+    border: 2px solid var(--main-light);
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main);
+}
+
+@media screen and (max-width: 992px){
+    header {
+        background-image: url(./background-images/header-thin.png);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+    }
+}
